@@ -6,5 +6,5 @@ import com.wyst.model.Restaurant;
 
 @RepositoryRestResource(collectionResourceRel = "restaurants", path = "restaurants")
 public interface RestaurantRepository extends ListCrudRepository<Restaurant, Long> {
- 
+
 }

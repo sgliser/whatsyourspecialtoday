@@ -1,6 +1,9 @@
 package com.wyst.model;
 
 import jakarta.persistence.Id;
+
+import java.util.Set;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,6 +26,7 @@ public class Restaurant {
     private String city;
     private String state;
     private String zip;
+    private String phone;
     private float latitude;
     private float longitude;
     private double distance;
@@ -38,5 +42,8 @@ public class Restaurant {
     private boolean chain;
     private String priceInidcator;
     private float rating;
+    private float ratingBase;
+    private Set<Menu> menus;
+
     
 }
